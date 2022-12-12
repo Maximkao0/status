@@ -20,7 +20,7 @@ class TreeStore:
 
     def addItem(self, item):
         try:
-            id = item['idk']
+            id = item['id']
             self.key[id] = self.items.index(item)
             parentId = self.items[self.key[id]]['parent']
             if parentId in self.key:
